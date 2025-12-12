@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Genius Azuka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Playfair+Display:wght@500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Baloo 2"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"Space Mono"', 'ui-monospace', 'SFMono-Regular']
+          },
+          colors: {
+            sand: {
+              50: '#fdfaf4',
+              100: '#f6edda',
+              200: '#e9d7b3'
+            },
+            deep: {
+              900: '#0f172a',
+              700: '#1e293b',
+              500: '#334155'
+            },
+            sunset: {
+              500: '#f97316',
+              400: '#fb923c'
+            },
+            ink: {
+              900: '#101010',
+              700: '#3a3a3a'
+            }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-[#0f0f0f] text-gray-100">
+  <div class="relative min-h-screen w-full overflow-visible flex flex-col">
+    <div class="hidden sm:block fixed left-6 top-1/2 -translate-y-1/2 z-30">
+      <div class="group w-16 hover:w-52 bg-white border border-gray-200 rounded-2xl shadow-soft py-12 px-5 flex flex-col gap-5 transition-all duration-300 z-30">
+        <a href="index.html#home" aria-label="Home" class="relative flex items-center justify-center group-hover:justify-start gap-3 text-gray-500 hover:text-ink-900 px-3 py-2 rounded-xl transition before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-ink-900 before:opacity-0 hover:before:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m3 12 9-9 9 9" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 10v9h14v-9" />
+          </svg>
+          <span class="hidden text-sm font-semibold text-ink-900 opacity-0 translate-x-2 transition duration-300 group-hover:inline-block group-hover:opacity-100 group-hover:translate-x-0">Home</span>
+        </a>
+        <a href="#about" aria-label="About" class="relative flex items-center justify-center group-hover:justify-start gap-3 text-gray-500 hover:text-ink-900 px-3 py-2 rounded-xl transition before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-ink-900 before:opacity-0 hover:before:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 0c-4.418 0-8 2.239-8 5m8-5c4.418 0 8 2.239 8 5" />
+          </svg>
+          <span class="hidden text-sm font-semibold text-ink-900 opacity-0 translate-x-2 transition duration-300 group-hover:inline-block group-hover:opacity-100 group-hover:translate-x-0">About</span>
+        </a>
+        <a href="index.html#projects" aria-label="Projects" class="relative flex items-center justify-center group-hover:justify-start gap-3 text-gray-500 hover:text-ink-900 px-3 py-2 rounded-xl transition before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-ink-900 before:opacity-0 hover:before:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6h10m-10 6h6M9 18h10M5 6v12" />
+          </svg>
+          <span class="hidden text-sm font-semibold text-ink-900 opacity-0 translate-x-2 transition duration-300 group-hover:inline-block group-hover:opacity-100 group-hover:translate-x-0">Projects</span>
+        </a>
+        <a href="index.html#tools" aria-label="Tool stack" class="relative flex items-center justify-center group-hover:justify-start gap-3 text-gray-500 hover:text-ink-900 px-3 py-2 rounded-xl transition before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-ink-900 before:opacity-0 hover:before:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v4m0 8v4m-5-7h4m2 0h4" />
+            <circle cx="12" cy="12" r="9" />
+          </svg>
+          <span class="hidden text-sm font-semibold text-ink-900 opacity-0 translate-x-2 transition duration-300 group-hover:inline-block group-hover:opacity-100 group-hover:translate-x-0">Tool-stack</span>
+        </a>
+        <a href="index.html#contact" aria-label="Contact" class="relative flex items-center justify-center group-hover:justify-start gap-3 text-gray-500 hover:text-ink-900 px-3 py-2 rounded-xl transition before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-ink-900 before:opacity-0 hover:before:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4 6 7.06 5.296a1.5 1.5 0 0 0 1.88 0L20 6" />
+            <rect width="18" height="14" x="3" y="5" rx="2" ry="2" />
+          </svg>
+          <span class="hidden text-sm font-semibold text-ink-900 opacity-0 translate-x-2 transition duration-300 group-hover:inline-block group-hover:opacity-100 group-hover:translate-x-0">Contact</span>
+        </a>
+      </div>
+    </div>
+
+    <main id="about" class="flex-1 px-6 sm:px-20 py-16 sm:py-20">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-[1.1fr,0.9fr] gap-10">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-3 border-b border-gray-700 pb-6">
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">About</p>
+            <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">Designing with intention, building with precision.</h1>
+            <p class="text-base sm:text-lg text-gray-200 font-serif leading-relaxed">
+              Hey, I’m Genius, a creative web designer and developer who enjoys building clean, modern, and functional digital experiences. I focus on simplicity, good visuals, and making websites feel smooth and intentional.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 border-b border-gray-700 pb-6">
+            <h2 class="font-display text-2xl text-white">&lt;/My Story&gt;</h2>
+            <p class="font-mono text-sm sm:text-base text-gray-200 leading-relaxed">
+              I’m a young developer passionate about designing beautiful interfaces and turning ideas into working products. I enjoy mixing design and development, using Figma for clean layout and bringing them into life with HTML, CSS, Tailwind, JavaScript and Django.
+              <br><br>
+              I love creating projects that actually solve problems, not just look good.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="p-5 rounded-2xl border border-gray-800 bg-[#121212]">
+              <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Focus</p>
+              <h3 class="text-lg font-semibold text-white mt-2">Product storytelling</h3>
+            </div>
+            <div class="p-5 rounded-2xl border border-gray-800 bg-[#121212]">
+              <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Edge</p>
+              <h3 class="text-lg font-semibold text-white mt-2">Motion + clarity</h3>
+            </div>
+            <div class="p-5 rounded-2xl border border-gray-800 bg-[#121212]">
+              <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Delivery</p>
+              <h3 class="text-lg font-semibold text-white mt-2">Design systems</h3>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 border-b border-gray-700 pb-6">
+            <h2 class="font-display text-2xl text-white">&lt;/What I build&gt;</h2>
+            <ul class="list-disc list-inside font-mono text-sm sm:text-base text-gray-200 space-y-2">
+              <li>Websites and modern product sites</li>
+              <li>UI/UX layouts and dashboards</li>
+              <li>Clean, minimal, intentional design systems</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-4 border-b border-gray-700 pb-6">
+            <h2 class="font-display text-2xl text-white">&lt;/Services&gt;</h2>
+            <ul class="font-mono text-sm sm:text-base text-gray-200 space-y-2">
+              <li>Web design & development</li>
+              <li>UI/UX design and prototyping</li>
+              <li>Frontend development</li>
+              <li>Dashboard & admin system design</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">Let’s Connect</h2>
+            <p class="font-mono text-sm sm:text-base text-gray-200">
+              If you’d like to work together or have a project in mind, feel free to reach out. I’m always open to collaborations, ideas, and new opportunities.
+            </p>
+            <a href="mailto:hello@geniusazuka.com" class="text-sm font-semibold text-white underline underline-offset-4 hover:text-gray-300">Email: hello@geniusazuka.com</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div class="p-6 rounded-2xl border border-gray-800 bg-[#121212] shadow-soft flex flex-col gap-4">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Years in</p>
+                <p class="text-3xl font-bold text-white">7+</p>
+              </div>
+              <div>
+                <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Launched</p>
+                <p class="text-3xl font-bold text-white">40+ sites</p>
+              </div>
+              <div>
+                <p class="text-sm font-mono uppercase tracking-wide text-gray-400">Clients</p>
+                <p class="text-3xl font-bold text-white">Global</p>
+              </div>
+            </div>
+            <p class="text-gray-200 font-serif">
+              Recent collabs span early-stage SaaS, boutique fashion, and cultural non-profits. I prioritize fast iteration, thoughtful feedback loops, and accessible experiences that feel premium without the pretense.
+            </p>
+            <div class="flex items-center gap-3 pt-2">
+              <div class="h-12 w-12 rounded-full bg-white text-black flex items-center justify-center font-display text-xl">G</div>
+              <div>
+                <p class="font-semibold text-white">Genius Azuka</p>
+                <p class="text-sm text-gray-400">Product Designer & Frontend Dev</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-gray-800 bg-[#121212] shadow-soft overflow-hidden">
+            <div class="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
+              <span class="h-3 w-3 rounded-full bg-red-500"></span>
+              <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+              <span class="h-3 w-3 rounded-full bg-green-500"></span>
+              <span class="text-xs font-mono text-gray-400 ml-2">genius@portfolio: ~</span>
+            </div>
+            <div class="p-4 font-mono text-sm text-gray-200 space-y-2">
+              <p>1. &gt; genius --skills</p>
+              <p>2. HTML  CSS  Tailwind  JavaScript  Python  Django</p>
+              <p>3. Figma</p>
+              <p>4. ---</p>
+              <p>5. &gt; genius --focus</p>
+              <p>6. UI/UX  ·  Modern Layouts  ·  Internal Systems</p>
+              <p>7. ---</p>
+              <p>8. &gt; genius --create website</p>
+              <p>9. ✔ Project generated successfully.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-800 px-6 sm:px-12 pb-12 bg-[#0f0f0f]">
+      <div class="flex flex-col gap-6 items-center sm:flex-row sm:justify-center sm:gap-10 mt-10 text-gray-400">
+        <div class="hidden sm:block h-px w-16 bg-gray-800"></div>
+        <div class="flex items-center gap-3">
+          <a href="https://instagram.com" class="border border-gray-800 rounded-lg px-3 py-2 hover:border-white hover:text-white transition" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <rect width="14" height="14" x="5" y="5" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="16" cy="8" r="1" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com" class="border border-gray-800 rounded-lg px-3 py-2 hover:border-white hover:text-white transition" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.94 9.75H4.5V20h2.44zM5.72 8.48a1.42 1.42 0 1 0-.02-2.84 1.42 1.42 0 0 0 .02 2.84zM20 20h-2.44v-5.6c0-1.44-.03-3.29-2-3.29-2 0-2.3 1.57-2.3 3.18V20H10.8V9.75h2.34v1.4h.03a2.57 2.57 0 0 1 2.31-1.27c2.47 0 2.92 1.63 2.92 3.75z" />
+            </svg>
+          </a>
+          <a href="mailto:hello@geniusazuka.com" class="border border-gray-800 rounded-lg px-3 py-2 hover:border-white hover:text-white transition" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4 6 8 6 8-6" />
+              <rect width="18" height="14" x="3" y="5" rx="2" ry="2" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="border border-gray-800 rounded-lg px-3 py-2 hover:border-white hover:text-white transition" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13 10h2.5l.5-3H13V5.5c0-.9.3-1.5 1.6-1.5H16V1.1C15.3 1 14 1 12.5 1 9.9 1 8 2.7 8 5.2V7H5.5v3H8v10h5z" />
+            </svg>
+          </a>
+        </div>
+        <div class="hidden sm:block h-px w-16 bg-gray-800"></div>
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-mono text-gray-500 tracking-tight">
+        <span>© 2025 Genius Azuka. All rights reserved.</span>
+        <div class="flex gap-6">
+          <a href="#terms" class="hover:text-white">Terms</a>
+          <a href="#privacy" class="hover:text-white">Privacy</a>
+          <a href="#accessibility" class="hover:text-white">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
