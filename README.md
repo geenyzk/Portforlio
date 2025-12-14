@@ -57,13 +57,13 @@ Portfolio/
 - **Shadows**: Soft, modern `box-shadow` for depth without harshness
 - **Transitions**: Smooth hover states for interactive elements
 
-## 📱 Sections
+## 📱 Pages
 
-- **Home** — Hero section with name and title
-- **About** — Personal introduction *(coming soon)*
-- **Projects** — Portfolio showcase *(coming soon)*
-- **Tools** — Tech stack and skills *(coming soon)*
-- **Contact** — Get in touch via social links
+- **Home** — Hero intro with quick CTAs
+- **About** — Personal background and story
+- **Projects** — Portfolio showcase
+- **Tools** — Tech stack and workflow
+- **Contact** — Contact form and direct links
 
 ## 📄 License
 
