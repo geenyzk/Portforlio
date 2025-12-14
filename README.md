@@ -28,8 +28,11 @@ A modern, minimalist personal portfolio website showcasing creative web design a
 
 ```
 Portfolio/
-├── index.html    # Main portfolio page
-└── README.md     # Project documentation
+├── index.html     # Main portfolio page
+├── about.html     # About page
+├── tools.html     # Tool stack page
+├── contact.html   # Contact form page
+└── README.md      # Project documentation
 ```
 
 ## 🚀 Getting Started
