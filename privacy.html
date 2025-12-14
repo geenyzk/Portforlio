@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy | Genius Azuka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Sora"', 'system-ui', 'sans-serif'],
+            serif: ['"Manrope"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular']
+          },
+          colors: {
+            sand: { 50: '#fdfaf4', 100: '#f6edda', 200: '#e9d7b3' },
+            deep: { 900: '#0f172a', 700: '#1e293b', 500: '#334155' },
+            sunset: { 500: '#f97316', 400: '#fb923c' },
+            ink: { 900: '#101010', 700: '#3a3a3a' }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-[#0b0b0f] text-gray-100">
+  <div class="relative min-h-screen w-full overflow-visible flex flex-col">
+    <main class="flex-1 px-6 sm:px-20 py-16 sm:py-20">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="flex flex-col gap-3">
+          <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Privacy</p>
+          <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">Privacy Policy</h1>
+          <p class="text-base sm:text-lg text-gray-200 font-serif max-w-3xl">Your information stays private. Here’s how data is collected, used, and protected when you reach out or work with me.</p>
+        </div>
+
+        <div class="grid gap-6">
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">1. Data collected</h2>
+            <p class="text-sm text-gray-300 font-serif">Contact details you share (name, email, project context) when you submit the contact form or email me.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">2. Use of data</h2>
+            <p class="text-sm text-gray-300 font-serif">To respond to inquiries, provide proposals, and deliver agreed work. No selling or sharing with third parties.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">3. Storage</h2>
+            <p class="text-sm text-gray-300 font-serif">Project files and communications are stored securely and retained only as long as needed for collaboration or legal requirements.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">4. Access & removal</h2>
+            <p class="text-sm text-gray-300 font-serif">You can request a copy or deletion of your shared data at any time by emailing hello@geniusazuka.com.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">5. Third-party tools</h2>
+            <p class="text-sm text-gray-300 font-serif">If used, analytics or hosting tools follow their own policies. No tracking cookies are added without notice.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">6. Updates</h2>
+            <p class="text-sm text-gray-300 font-serif">Policy changes will be noted here with an updated date.</p>
+          </section>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 border border-gray-800 rounded-2xl bg-[#111318] p-6 shadow-soft">
+          <div class="flex flex-col gap-2">
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Questions</p>
+            <h3 class="font-display text-xl text-white">Need to update or remove your info?</h3>
+          </div>
+          <a href="mailto:hello@geniusazuka.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Email me</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
