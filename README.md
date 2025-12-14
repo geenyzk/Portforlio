@@ -10,7 +10,7 @@ A modern, minimalist personal portfolio website showcasing creative web design a
 
 - **Minimalist Design** — Clean, distraction-free layout that puts content first
 - **Responsive Layout** — Optimized for all screen sizes, from mobile to desktop
-- **Custom Typography** — Elegant font pairing with Baloo 2, Playfair Display & Space Mono
+- **Custom Typography** — Clean pairing with Sora, Manrope & JetBrains Mono
 - **Floating Navigation** — Sleek sidebar navigation with smooth icon-based menu
 - **Social Integration** — Quick access links to Instagram, LinkedIn, Facebook & Email
 - **Modern Tech Stack** — Built with Tailwind CSS for rapid, utility-first styling
@@ -33,6 +33,8 @@ Portfolio/
 ├── projects.html  # Projects page
 ├── tools.html     # Tool stack page
 ├── contact.html   # Contact form page
+├── terms.html     # Terms of service
+├── privacy.html   # Privacy policy
 └── README.md      # Project documentation
 ```
 

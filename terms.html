@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms | Genius Azuka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Sora"', 'system-ui', 'sans-serif'],
+            serif: ['"Manrope"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular']
+          },
+          colors: {
+            sand: { 50: '#fdfaf4', 100: '#f6edda', 200: '#e9d7b3' },
+            deep: { 900: '#0f172a', 700: '#1e293b', 500: '#334155' },
+            sunset: { 500: '#f97316', 400: '#fb923c' },
+            ink: { 900: '#101010', 700: '#3a3a3a' }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-[#0b0b0f] text-gray-100">
+  <div class="relative min-h-screen w-full overflow-visible flex flex-col">
+    <main class="flex-1 px-6 sm:px-20 py-16 sm:py-20">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="flex flex-col gap-3">
+          <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Terms</p>
+          <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">Terms of Service</h1>
+          <p class="text-base sm:text-lg text-gray-200 font-serif max-w-3xl">These terms outline how we can collaborate, what you can expect, and how your information is handled during a project.</p>
+        </div>
+
+        <div class="grid gap-6">
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">1. Engagement</h2>
+            <p class="text-sm text-gray-300 font-serif">Work begins once scope, timeline, and fees are agreed. Milestones and deliverables are shared upfront; feedback cycles are scheduled to keep momentum.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">2. Intellectual Property</h2>
+            <p class="text-sm text-gray-300 font-serif">You own final approved deliverables upon full payment. I may showcase non-confidential work in my portfolio unless we agree otherwise.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">3. Payment</h2>
+            <p class="text-sm text-gray-300 font-serif">Invoices follow milestones or monthly cadence. Late payments may pause work until resolved.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">4. Revisions</h2>
+            <p class="text-sm text-gray-300 font-serif">Each phase includes defined feedback rounds. Additional revisions are scheduled and scoped separately.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">5. Confidentiality</h2>
+            <p class="text-sm text-gray-300 font-serif">Project materials remain confidential. Credentials are stored securely and removed after handoff.</p>
+          </section>
+          <section class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+            <h2 class="font-display text-2xl text-white">6. Warranties</h2>
+            <p class="text-sm text-gray-300 font-serif">Deliverables are provided as-is; I’ll address launch bugs within an agreed window. Third-party dependencies follow their own licenses.</p>
+          </section>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 border border-gray-800 rounded-2xl bg-[#111318] p-6 shadow-soft">
+          <div class="flex flex-col gap-2">
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Questions</p>
+            <h3 class="font-display text-xl text-white">Need clarity on scope or ownership?</h3>
+          </div>
+          <a href="mailto:hello@geniusazuka.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Email me</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
