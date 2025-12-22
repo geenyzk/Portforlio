@@ -44,8 +44,26 @@
       }
     };
   </script>
+  <!-- added meta description for clarity and a tiny style to improve transform rendering on older devices -->
+  <meta name="description" content="Genius Azuka — product design and fullstack builds: portfolio of React, Django, Tailwind projects.">
+  <style>
+    /* help with smoother transforms on some devices */
+    .will-change-transform { will-change: transform; }
+  </style>
 </head>
 <body class="min-h-screen bg-[#0b0b0f] text-gray-100">
+  <!-- compact mobile header (visible on small screens only) -->
+  <header class="sm:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%]">
+    <div class="flex items-center justify-between bg-[#0f1113] border border-gray-800 rounded-xl px-3 py-2 shadow-soft">
+      <a href="index.html#home" class="flex items-center gap-3 text-white font-display font-extrabold text-sm focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none rounded-sm">
+        <span>Genius Azuka</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <a href="contact.html" class="text-sm font-semibold px-3 py-2 rounded-md bg-white text-ink-900 hover:-translate-y-0.5 transform transition focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Contact</a>
+      </div>
+    </div>
+  </header>
+
   <div class="relative min-h-screen w-full overflow-visible flex flex-col">
 
     <div class="hidden sm:block fixed left-6 top-1/2 -translate-y-1/2 z-30">
@@ -87,17 +105,17 @@
     </div>
 
     <!-- Mobile nav toggle -->
-    <button id="side-toggle" class="md:hidden fixed bottom-6 left-6 z-40 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white text-ink-900 shadow-soft">
+    <button id="side-toggle" aria-controls="mobile-drawer" aria-expanded="false" class="md:hidden fixed bottom-6 left-6 z-40 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white text-ink-900 shadow-soft focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
       </svg>
       <span class="text-sm font-semibold">Menu</span>
     </button>
-    <div id="mobile-drawer" class="md:hidden fixed inset-0 z-30 bg-black/40 backdrop-blur-sm hidden">
+    <div id="mobile-drawer" role="dialog" aria-modal="true" aria-hidden="true" class="md:hidden fixed inset-0 z-30 bg-black/40 backdrop-blur-sm hidden">
       <div class="absolute left-0 top-0 h-full w-72 bg-[#0f0f0f] shadow-soft p-6 flex flex-col gap-4 border-r border-gray-800">
         <div class="flex items-center justify-between">
           <span class="font-display text-xl font-extrabold text-white">Navigate</span>
-          <button id="side-close" class="h-10 w-10 rounded-xl border border-gray-800 flex items-center justify-center text-white">
+          <button id="side-close" aria-label="Close navigation" class="h-10 w-10 rounded-xl border border-gray-800 flex items-center justify-center text-white focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18 18 6" />
             </svg>
@@ -137,7 +155,7 @@
 
     <main id="projects" class="flex-1 px-6 sm:px-20 pt-28 sm:pt-32 pb-16 sm:pb-20">
       <div class="max-w-6xl mx-auto flex flex-col gap-10">
-        <div class="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] p-10 shadow-soft">
+        <div class="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] p-10 shadow-soft will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
           <div class="absolute -left-14 -top-16 h-48 w-48 bg-sunset-500/10 blur-3xl rounded-full"></div>
           <div class="absolute -right-20 -bottom-20 h-72 w-72 bg-ink-700/20 blur-3xl rounded-full"></div>
           <div class="relative z-10 flex flex-col gap-4">
@@ -155,7 +173,7 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-6">
-          <article class="lg:col-span-2 p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4">
+          <article class="lg:col-span-2 p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Eyres Staff Software</h2>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Operations</span>
@@ -177,10 +195,10 @@
                 <p class="text-gray-100">Lean ops app with clear permissions</p>
               </div>
             </div>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Eyres%20Staff%20Software" class="text-sm font-mono text-sunset-500 hover:text-sunset-400">Request access (private) →</a>
+            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Eyres%20Staff%20Software" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">Rolsa</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Web app</span>
@@ -192,10 +210,10 @@
               <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Motion</span>
             </div>
             <p class="text-xs font-mono text-gray-400">Process: Figma → Tailwind components → motion polish.</p>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Rolsa" class="text-sm font-mono text-sunset-500 hover:text-sunset-400">Request access (private) →</a>
+            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Rolsa" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">CRUD Dashboard</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Productivity</span>
@@ -207,10 +225,10 @@
               <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Mongo/SQL</span>
             </div>
             <p class="text-xs font-mono text-gray-400">Focus: predictable forms, accessibility, and tidy state.</p>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20CRUD%20dashboard" class="text-sm font-mono text-sunset-500 hover:text-sunset-400">Request access (private) →</a>
+            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20CRUD%20dashboard" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">Other GitHub Repos</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Open source</span>
@@ -222,12 +240,12 @@
               <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Django</span>
               <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
             </div>
-            <a href="https://github.com/geenyzk" class="text-sm font-mono text-sunset-500 hover:text-sunset-400">Browse profile →</a>
+            <a href="https://github.com/geenyzk" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Browse profile →</a>
           </article>
         </div>
 
         <div class="grid lg:grid-cols-[1.1fr,0.9fr] gap-6">
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4">
+          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Process snapshot</h2>
               <span class="text-xs font-mono text-gray-400">Build flow</span>
@@ -244,15 +262,15 @@
             </div>
           </div>
 
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5">
+          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Let’s build yours</h2>
               <span class="text-xs font-mono text-gray-400">New work</span>
             </div>
             <p class="text-sm text-gray-300 font-serif">Have a project in mind? Share scope, audience, and timeline—I’ll respond within 48 hours with a suggested plan.</p>
             <div class="flex flex-wrap gap-3">
-              <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Contact form</a>
-              <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-ink-900 transition">Email me</a>
+              <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Contact form</a>
+              <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-ink-900 transition focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Email me</a>
             </div>
             <div class="rounded-xl border border-gray-800 bg-white/5 p-4 font-mono text-xs text-gray-200 space-y-2">
               <p>stack --design → Figma / Framer</p>
@@ -318,10 +336,26 @@
     const sideToggle = document.getElementById('side-toggle');
     const sideClose = document.getElementById('side-close');
     const mobileDrawer = document.getElementById('mobile-drawer');
-    sideToggle?.addEventListener('click', () => mobileDrawer?.classList.toggle('hidden'));
-    sideClose?.addEventListener('click', () => mobileDrawer?.classList.add('hidden'));
+    function openDrawer() {
+      mobileDrawer?.classList.remove('hidden');
+      mobileDrawer?.setAttribute('aria-hidden', 'false');
+      sideToggle?.setAttribute('aria-expanded', 'true');
+    }
+    function closeDrawer() {
+      mobileDrawer?.classList.add('hidden');
+      mobileDrawer?.setAttribute('aria-hidden', 'true');
+      sideToggle?.setAttribute('aria-expanded', 'false');
+    }
+    sideToggle?.addEventListener('click', () => {
+      if (mobileDrawer?.classList.contains('hidden')) openDrawer(); else closeDrawer();
+    });
+    sideClose?.addEventListener('click', closeDrawer);
     mobileDrawer?.addEventListener('click', (e) => {
-      if (e.target === mobileDrawer) mobileDrawer.classList.add('hidden');
+      if (e.target === mobileDrawer) closeDrawer();
+    });
+    // close with Escape for accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
     });
   </script>
 </body>
