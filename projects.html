@@ -44,11 +44,12 @@
       }
     };
   </script>
-  <!-- added meta description for clarity and a tiny style to improve transform rendering on older devices -->
-  <meta name="description" content="Genius Azuka — product design and fullstack builds: portfolio of React, Django, Tailwind projects.">
   <style>
     /* help with smoother transforms on some devices */
     .will-change-transform { will-change: transform; }
+    /* shared layout helpers */
+    .site-max { max-width: 1100px; }
+    .card-pad { padding: 1.5rem; }
   </style>
 </head>
 <body class="min-h-screen bg-[#0b0b0f] text-gray-100">
@@ -154,7 +155,7 @@
     </div>
 
     <main id="projects" class="flex-1 px-6 sm:px-20 pt-28 sm:pt-32 pb-16 sm:pb-20">
-      <div class="max-w-6xl mx-auto flex flex-col gap-10">
+      <div class="max-w-5xl mx-auto site-max flex flex-col gap-10">
         <div class="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] p-10 shadow-soft will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
           <div class="absolute -left-14 -top-16 h-48 w-48 bg-sunset-500/10 blur-3xl rounded-full"></div>
           <div class="absolute -right-20 -bottom-20 h-72 w-72 bg-ink-700/20 blur-3xl rounded-full"></div>
@@ -172,8 +173,8 @@
           </div>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-6">
-          <article class="lg:col-span-2 p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <article class="lg:col-span-2 p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Eyres Staff Software</h2>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Operations</span>
@@ -198,7 +199,7 @@
             <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Eyres%20Staff%20Software" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">Rolsa</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Web app</span>
@@ -213,7 +214,7 @@
             <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Rolsa" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">CRUD Dashboard</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Productivity</span>
@@ -228,7 +229,7 @@
             <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20CRUD%20dashboard" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
           </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h3 class="font-display text-xl text-white">Other GitHub Repos</h3>
               <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Open source</span>
@@ -244,8 +245,8 @@
           </article>
         </div>
 
-        <div class="grid lg:grid-cols-[1.1fr,0.9fr] gap-6">
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="grid lg:grid-cols-[1.1fr,0.9fr] gap-8">
+          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Process snapshot</h2>
               <span class="text-xs font-mono text-gray-400">Build flow</span>
@@ -262,7 +263,7 @@
             </div>
           </div>
 
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
             <div class="flex items-center justify-between">
               <h2 class="font-display text-2xl text-white">Let’s build yours</h2>
               <span class="text-xs font-mono text-gray-400">New work</span>

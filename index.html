@@ -44,6 +44,10 @@
       }
     };
   </script>
+  <style>
+    /* small layout helper used across pages */
+    .site-max { max-width: 1100px; }
+  </style>
 </head>
 <body class="min-h-screen bg-white text-ink-900">
   <div class="relative min-h-screen w-full overflow-visible flex flex-col">
@@ -136,14 +140,14 @@
       </div>
     </div>
 
-    <main id="home" class="flex-1 flex flex-col items-center justify-center text-center px-6 sm:px-20 pt-28 pb-20 relative">
+    <main id="home" class="flex-1 flex flex-col items-center justify-center text-center px-6 sm:px-12 pt-28 pb-20 relative">
       <div class="absolute inset-x-0 top-0 sm:top-10 flex justify-center">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white shadow-soft">
           <span class="h-2 w-2 rounded-full bg-ink-900 animate-pulse"></span>
           <span class="text-xs font-mono uppercase tracking-[0.25em] text-gray-600">Portfolio 2025</span>
         </div>
       </div>
-      <div class="flex flex-col items-center gap-6 mt-16">
+      <div class="flex flex-col items-center gap-8 mt-16 max-w-3xl mx-auto site-max">
         <p class="font-mono text-xs sm:text-sm uppercase tracking-[0.35em] text-gray-600">Creative Web Designer & Developer</p>
         <h1 class="font-display text-6xl sm:text-7xl md:text-8xl font-extrabold leading-tight text-ink-900">
           Genius <span class="text-ink-900">Azuka</span>
@@ -165,7 +169,7 @@
       </div>
     </main>
     <footer class="border-t border-gray-200 bg-white px-6 sm:px-12 py-12">
-      <div class="max-w-6xl mx-auto flex flex-col gap-8">
+      <div class="max-w-5xl mx-auto w-full">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div class="flex flex-col gap-2">
             <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-600">Let’s build</p>
