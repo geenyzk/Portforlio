@@ -36,9 +36,14 @@
     .marquee-inner {
       display: flex;
       white-space: nowrap;
-      animation: marquee 40s linear infinite;
+      animation: marquee 16s linear infinite;
     }
     .marquee-inner:hover { animation-play-state: paused; }
+    @media (max-width: 640px) {
+      .marquee-inner {
+        animation-duration: 12s;
+      }
+    }
     .text-outline {
       -webkit-text-stroke: 1.5px #101010;
       color: transparent;
