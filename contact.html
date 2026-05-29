@@ -155,7 +155,7 @@
           <div class="grid lg:grid-cols-[1.3fr,0.7fr] gap-16">
 
             <!-- Form -->
-            <form id="contact-form" method="POST" action="/api/contact" class="flex flex-col gap-10" novalidate>
+            <form id="contact-form" method="POST" action="mailto:info@geeny.co.uk" enctype="text/plain" class="flex flex-col gap-10" novalidate>
               <div class="grid sm:grid-cols-2 gap-6">
                 <div class="flex flex-col gap-2">
                   <label for="name" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Name</label>
@@ -326,18 +326,53 @@
     });
   </script>
   <script>
-    // Contact form — Web3Forms (https://web3forms.com)
-    // Sign up with info@geeny.co.uk to get your free access key, then replace YOUR_ACCESS_KEY below.
+    // Contact form — Web3Forms when configured, with an email fallback for static hosting.
+    // To send silently from the page, create a Web3Forms key and replace YOUR_ACCESS_KEY below.
     (function () {
       const ACCESS_KEY = 'YOUR_ACCESS_KEY';
+      const CONTACT_EMAIL = 'info@geeny.co.uk';
 
       const form = document.getElementById('contact-form');
       const status = document.getElementById('form-status');
       if (!form) return;
 
+      const hasConfiguredAccessKey = ACCESS_KEY && ACCESS_KEY !== 'YOUR_ACCESS_KEY';
+
+      const getPayload = () => ({
+        subject: 'New enquiry from geeny.co.uk',
+        from_name: form.name?.value || '',
+        name: form.name?.value || '',
+        email: form.email?.value || '',
+        'project-type': form['project-type']?.value || '',
+        timeline: form.timeline?.value || '',
+        message: form.message?.value || ''
+      });
+
+      const openEmailFallback = (payload) => {
+        const emailSubject = encodeURIComponent(payload.subject);
+        const emailBody = encodeURIComponent(
+          [
+            `Name: ${payload.name}`,
+            `Email: ${payload.email}`,
+            `Project type: ${payload['project-type']}`,
+            `Timeline: ${payload.timeline || 'Not provided'}`,
+            '',
+            'Project details:',
+            payload.message
+          ].join('\n')
+        );
+
+        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${emailSubject}&body=${emailBody}`;
+      };
+
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         status.textContent = '';
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
 
         // honeypot check — silently ignore bots
         if (form.querySelector('[name="website"]').value) {
@@ -350,22 +385,23 @@
         const initialBtnHTML = submitBtn.innerHTML;
         submitBtn.textContent = 'Sending...';
 
-        const payload = {
-          access_key: ACCESS_KEY,
-          subject: 'New enquiry from geeny.co.uk',
-          from_name: form.name?.value || '',
-          name: form.name?.value || '',
-          email: form.email?.value || '',
-          'project-type': form['project-type']?.value || '',
-          timeline: form.timeline?.value || '',
-          message: form.message?.value || ''
-        };
+        const payload = getPayload();
+
+        if (!hasConfiguredAccessKey) {
+          openEmailFallback(payload);
+          status.classList.remove('text-red-400');
+          status.classList.add('text-sunset-500');
+          status.textContent = 'Your email app opened with the message details ready to send.';
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = initialBtnHTML;
+          return;
+        }
 
         try {
           const res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(payload)
+            body: JSON.stringify({ access_key: ACCESS_KEY, ...payload })
           });
 
           const body = await res.json();
