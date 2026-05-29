@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -134,173 +134,172 @@
       </div>
     </div>
 
-    <main id="tools" class="flex-1 px-6 sm:px-20 pt-28 sm:pt-32 pb-16 sm:pb-20">
-      <div class="max-w-6xl mx-auto flex flex-col gap-10">
-        <div class="flex flex-col gap-4 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] border border-gray-800 rounded-3xl p-8 shadow-soft relative overflow-hidden">
-          <div class="absolute -left-16 -top-16 h-48 w-48 bg-sunset-500/10 blur-3xl rounded-full"></div>
-          <div class="absolute -right-10 -bottom-20 h-64 w-64 bg-ink-700/20 blur-3xl rounded-full"></div>
-          <div class="flex items-center gap-3">
-            <span class="h-2 w-2 rounded-full bg-sunset-500 animate-pulse"></span>
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-300">Tool Stack</p>
-          </div>
-          <div class="flex flex-col gap-3 relative z-10">
-            <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">A lean toolchain that ships polish.</h1>
-            <p class="text-base sm:text-lg text-gray-200 font-serif leading-relaxed max-w-3xl">
-              From idea to launch, I keep my stack intentionally small: design in Figma or Framer, build fast in React, ship backends with Django, and style with the right layer of CSS—vanilla, Tailwind, or modules—depending on the project’s needs.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Design → Prototype</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Build → Ship</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Measure → Iterate</span>
-            </div>
-          </div>
-        </div>
+    <main id="tools" class="flex-1 px-6 sm:px-12 pt-28 sm:pt-36 pb-24">
+      <div class="max-w-4xl mx-auto flex flex-col">
 
-        <div class="grid lg:grid-cols-3 gap-6">
-          <div class="lg:col-span-2 grid sm:grid-cols-2 gap-4">
-            <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] flex flex-col gap-3 shadow-soft">
-              <div class="flex items-center justify-between">
-                <h2 class="font-display text-2xl text-white">Design & Prototype</h2>
-                <span class="text-xs font-mono text-gray-400">Figma · Framer</span>
-              </div>
-              <p class="text-sm text-gray-300 font-serif">UI flows, interaction drafts, and motion references are built in Figma or Framer before any code is written.</p>
-              <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Component libraries</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Design tokens</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Prototyped motion</span>
-              </div>
-            </div>
+        <!-- Hero -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Tool Stack</p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-8">A lean toolchain<br>that ships polish.</h1>
+          <p class="text-lg text-gray-400 font-serif leading-relaxed max-w-2xl mb-10">
+            From idea to launch, I keep my stack intentionally small&#8212;design in Figma or Framer, build fast in React, ship backends with Django, and style with the right layer of CSS depending on the project&#39;s needs.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Design &#8594; Prototype</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Build &#8594; Ship</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Measure &#8594; Iterate</span>
+          </div>
+        </section>
 
-            <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] flex flex-col gap-3 shadow-soft">
-              <div class="flex items-center justify-between">
-                <h2 class="font-display text-2xl text-white">Frontend Build</h2>
-                <span class="text-xs font-mono text-gray-400">React · Node.js</span>
+        <!-- The Stack -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-10">The Stack</p>
+          <div class="border-t border-gray-800">
+
+            <div class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">01</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-2">Design &amp; Prototype</h2>
+                <p class="font-mono text-sm text-sunset-500">Figma &middot; Framer</p>
               </div>
-              <p class="text-sm text-gray-300 font-serif">React for expressive UIs, Node.js for tooling and APIs when needed—kept modular and production-ready.</p>
-              <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Reusable hooks</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Accessible components</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">SSR-ready patterns</span>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">UI flows, interaction drafts, and motion references are built in Figma or Framer before a single line of code is written. This keeps iteration cheap and decisions visual.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>Component libraries</span><span class="text-gray-800">&middot;</span>
+                  <span>Design tokens</span><span class="text-gray-800">&middot;</span>
+                  <span>Prototyped motion</span>
+                </div>
               </div>
             </div>
 
-            <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] flex flex-col gap-3 shadow-soft">
-              <div class="flex items-center justify-between">
-                <h2 class="font-display text-2xl text-white">Styling System</h2>
-                <span class="text-xs font-mono text-gray-400">CSS · Tailwind · Modules</span>
+            <div class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">02</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-2">Frontend Build</h2>
+                <p class="font-mono text-sm text-sunset-500">React &middot; Node.js</p>
               </div>
-              <p class="text-sm text-gray-300 font-serif">Vanilla CSS for control, Tailwind CSS for velocity, and CSS Modules when scoping needs to stay tight.</p>
-              <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Responsive grids</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Design tokens</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Micro-interactions</span>
-              </div>
-            </div>
-
-            <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] flex flex-col gap-3 shadow-soft">
-              <div class="flex items-center justify-between">
-                <h2 class="font-display text-2xl text-white">Backend & Delivery</h2>
-                <span class="text-xs font-mono text-gray-400">Django</span>
-              </div>
-              <p class="text-sm text-gray-300 font-serif">Secure, scalable backends with Django—admin-ready, API-driven, and built for quick iteration.</p>
-              <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">REST endpoints</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Auth & sessions</span>
-                <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Performance tuning</span>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">React for expressive, component-driven UIs. Node.js for tooling and lightweight APIs when needed&#8212;kept modular, testable, and production-ready from the start.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>Reusable hooks</span><span class="text-gray-800">&middot;</span>
+                  <span>Accessible components</span><span class="text-gray-800">&middot;</span>
+                  <span>SSR-ready patterns</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5">
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-2xl text-white">Launch checklist</h2>
-              <span class="text-xs font-mono text-gray-400">Build flow</span>
+            <div class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">03</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-2">Styling System</h2>
+                <p class="font-mono text-sm text-sunset-500">CSS &middot; Tailwind &middot; Modules</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">Vanilla CSS when full control matters. Tailwind CSS for velocity on product work. CSS Modules when scoping needs to stay tight in large codebases. I pick the approach that fits the project&#39;s complexity.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>Responsive grids</span><span class="text-gray-800">&middot;</span>
+                  <span>Design tokens</span><span class="text-gray-800">&middot;</span>
+                  <span>Micro-interactions</span>
+                </div>
+              </div>
             </div>
-            <ol class="space-y-3 text-sm text-gray-200 font-mono">
-              <li class="flex gap-3">
-                <span class="text-sunset-500">01</span>
-                <span>Wireframes & clickable prototype in Figma/Framer.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-sunset-500">02</span>
-                <span>Design tokens + components, CSS approach chosen per scope.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-sunset-500">03</span>
-                <span>React build with accessible, reusable blocks.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-sunset-500">04</span>
-                <span>API layer on Django; Node.js scripts for tooling.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-sunset-500">05</span>
-                <span>Performance, QA, and handoff docs.</span>
-              </li>
-            </ol>
-            <div class="rounded-xl border border-gray-800 bg-white/5 p-4">
-              <p class="text-xs uppercase tracking-[0.2em] font-mono text-gray-400 mb-2">Best for</p>
-              <p class="font-serif text-gray-100">Marketing sites, dashboards, MVPs, and experiential pages that need polish without heavy overhead.</p>
-            </div>
-            <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 text-sm font-semibold text-white underline underline-offset-4 hover:text-gray-300">Request a stack fit</a>
-          </div>
-        </div>
 
-        <div class="grid md:grid-cols-[1.1fr,0.9fr] gap-6">
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4">
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-2xl text-white">How I choose the layer</h2>
-              <span class="text-xs font-mono text-gray-400">Decision flow</span>
+            <div class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">04</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-2">Backend &amp; Delivery</h2>
+                <p class="font-mono text-sm text-sunset-500">Django</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">Secure, scalable backends with Django&#8212;admin-ready out of the box, API-driven, and built for quick iteration without sacrificing structure or security.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>REST endpoints</span><span class="text-gray-800">&middot;</span>
+                  <span>Auth &amp; sessions</span><span class="text-gray-800">&middot;</span>
+                  <span>Performance tuning</span>
+                </div>
+              </div>
             </div>
-            <div class="space-y-3 text-sm text-gray-200 font-mono">
-              <p><span class="text-sunset-500">Rapid concept:</span> Figma or Framer → Tailwind → React.</p>
-              <p><span class="text-sunset-500">Structured product:</span> Figma components → CSS Modules for scoping → React.</p>
-              <p><span class="text-sunset-500">Data-heavy:</span> Django API → React views → modular CSS for performance.</p>
-              <p><span class="text-sunset-500">Motion-led page:</span> Framer prototype → Tailwind + CSS custom props → React + small GSAP/Framer Motion.</p>
-            </div>
-            <p class="text-sm text-gray-300 font-serif pt-1">Each project gets the smallest possible set of dependencies so shipping stays quick and maintenance stays simple.</p>
-          </div>
 
-          <div class="rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft overflow-hidden">
-            <div class="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
-              <span class="h-3 w-3 rounded-full bg-red-500"></span>
-              <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
-              <span class="h-3 w-3 rounded-full bg-green-500"></span>
-              <span class="text-xs font-mono text-gray-400 ml-2">stack@genius: ~</span>
-            </div>
-            <div class="p-4 font-mono text-sm text-gray-200 space-y-2">
-              <p>1. &gt; stack --design</p>
-              <p>2. Figma  ·  Framer</p>
-              <p>3. ---</p>
-              <p>4. &gt; stack --frontend</p>
-              <p>5. React  ·  Node.js</p>
-              <p>6. ---</p>
-              <p>7. &gt; stack --backend</p>
-              <p>8. Django</p>
-              <p>9. ---</p>
-              <p>10. &gt; stack --styling</p>
-              <p>11. Vanilla CSS  ·  Tailwind CSS  ·  CSS Modules</p>
-              <p>12. ---</p>
-              <p>13. ✔ Stack verified and shipping.</p>
-            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-gray-800 rounded-2xl bg-[#111318] p-6 shadow-soft">
-          <div class="flex flex-col gap-2">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Next step</p>
-            <h2 class="font-display text-2xl text-white">Have a project? Let’s pair the right tools.</h2>
-            <p class="text-sm text-gray-300 font-serif max-w-xl">Tell me the goal, the audience, and the constraints—I’ll assemble the stack that balances speed and craft.</p>
+        <!-- How I choose -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-10">How I choose</p>
+          <div class="grid sm:grid-cols-2 gap-x-16 gap-y-10">
+            <div>
+              <p class="font-mono text-sm text-sunset-500 mb-2">Rapid concept</p>
+              <p class="text-gray-400 font-serif leading-relaxed">Figma or Framer &#8594; Tailwind &#8594; React. Fast to explore, fast to throw away.</p>
+            </div>
+            <div>
+              <p class="font-mono text-sm text-sunset-500 mb-2">Structured product</p>
+              <p class="text-gray-400 font-serif leading-relaxed">Figma component library &#8594; CSS Modules for scoping &#8594; React. Built to scale.</p>
+            </div>
+            <div>
+              <p class="font-mono text-sm text-sunset-500 mb-2">Data-heavy app</p>
+              <p class="text-gray-400 font-serif leading-relaxed">Django API &#8594; React views &#8594; modular CSS optimised for render performance.</p>
+            </div>
+            <div>
+              <p class="font-mono text-sm text-sunset-500 mb-2">Motion-led page</p>
+              <p class="text-gray-400 font-serif leading-relaxed">Framer prototype &#8594; Tailwind + CSS custom props &#8594; React with Framer Motion or GSAP.</p>
+            </div>
           </div>
-          <div class="flex flex-wrap gap-3">
-            <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">
-              Email me
-            </a>
-            <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-ink-900 transition">
-              Book a call
-            </a>
+          <p class="mt-10 text-gray-600 font-serif text-sm max-w-xl">Each project gets the smallest possible set of dependencies so shipping stays quick and maintenance stays simple.</p>
+        </section>
+
+        <!-- Build flow -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-10">Build flow</p>
+          <ol class="space-y-8">
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">01</span>
+              <div>
+                <p class="text-white font-serif mb-1">Wireframes &amp; clickable prototype</p>
+                <p class="text-gray-500 text-sm font-serif">Laid out in Figma or Framer before any code is touched.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">02</span>
+              <div>
+                <p class="text-white font-serif mb-1">Design tokens + component approach</p>
+                <p class="text-gray-500 text-sm font-serif">CSS strategy chosen per project scope. Tokens extracted early.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">03</span>
+              <div>
+                <p class="text-white font-serif mb-1">React build</p>
+                <p class="text-gray-500 text-sm font-serif">Accessible, reusable components. Hooks over boilerplate.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">04</span>
+              <div>
+                <p class="text-white font-serif mb-1">API layer on Django</p>
+                <p class="text-gray-500 text-sm font-serif">Node.js scripts handle tooling where needed.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">05</span>
+              <div>
+                <p class="text-white font-serif mb-1">Performance, QA &amp; handoff</p>
+                <p class="text-gray-500 text-sm font-serif">Audits, docs, and a clean handoff that won&#39;t leave the next dev lost.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- CTA -->
+        <section class="border-t border-gray-800 pt-16 sm:pt-20">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Next step</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-white font-extrabold mb-4 max-w-xl">Have a project? Let&#39;s pair the right tools.</h2>
+          <p class="text-gray-400 font-serif leading-relaxed max-w-xl mb-10">Tell me the goal, the audience, and the constraints&#8212;I&#39;ll assemble the stack that balances speed and craft.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 bg-white text-ink-900 font-semibold rounded-xl hover:-translate-y-0.5 hover:shadow-lg transition text-sm">Email me</a>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 border border-gray-700 text-white font-semibold rounded-xl hover:border-white transition text-sm">Book a call</a>
           </div>
-        </div>
+        </section>
+
       </div>
     </main>
 
@@ -308,8 +307,8 @@
       <div class="max-w-6xl mx-auto flex flex-col gap-8">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div class="flex flex-col gap-2">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Let’s collaborate</p>
-            <h3 class="font-display text-2xl text-white">Need a stack fit? I’ll tailor the build for speed and polish.</h3>
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Letâ€™s collaborate</p>
+            <h3 class="font-display text-2xl text-white">Need a stack fit? Iâ€™ll tailor the build for speed and polish.</h3>
           </div>
           <div class="flex flex-wrap gap-3">
             <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Start a project</a>
@@ -338,7 +337,7 @@
             </a>
           </div>
           <div class="flex flex-wrap items-center gap-4 font-mono text-xs text-gray-400">
-            <span>© 2025 Genius Azuka</span>
+            <span>Â© 2025 Genius Azuka</span>
             <div class="h-4 w-px bg-gray-800"></div>
             <div class="flex flex-wrap gap-4">
               <a href="about.html" class="hover:text-white">About</a>

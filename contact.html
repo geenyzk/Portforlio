@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -133,127 +133,129 @@
       </div>
     </div>
 
-    <main id="contact" class="flex-1 px-6 sm:px-20 pt-28 sm:pt-32 pb-16 sm:pb-20">
-      <div class="max-w-6xl mx-auto flex flex-col gap-10">
-        <div class="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] p-10 shadow-soft">
-          <div class="absolute -left-10 -top-14 h-48 w-48 bg-sunset-500/10 blur-3xl rounded-full"></div>
-          <div class="absolute -right-20 -bottom-24 h-72 w-72 bg-ink-700/20 blur-3xl rounded-full"></div>
-          <div class="relative z-10 flex flex-col gap-4">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-300">Contact</p>
-            <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">Tell me about your idea.</h1>
-            <p class="text-base sm:text-lg text-gray-200 font-serif leading-relaxed max-w-3xl">
-              Share the goal, audience, and constraints. I’ll follow up with a quick plan, suggested stack, and timeline to move fast without losing polish.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">1–2 day response</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Figma / Framer ready</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">React / Django builds</span>
-            </div>
+    <main id="contact" class="flex-1 px-6 sm:px-12 pt-28 sm:pt-36 pb-24">
+      <div class="max-w-4xl mx-auto flex flex-col">
+
+        <!-- Hero -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Contact</p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-8">Tell me about<br>your idea.</h1>
+          <p class="text-lg text-gray-400 font-serif leading-relaxed max-w-2xl mb-10">
+            Share the goal, audience, and constraints. I&#39;ll follow up with a quick plan, suggested stack, and timeline to move fast without losing polish.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">1&#8211;2 day response</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Figma / Framer ready</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">React / Django builds</span>
           </div>
-        </div>
+        </section>
 
-        <div class="grid lg:grid-cols-[1.1fr,0.9fr] gap-8">
-          <form id="contact-form" method="POST" action="/api/contact" class="p-8 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-6" novalidate>
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div class="flex flex-col gap-2">
-                <label for="name" class="text-sm font-mono uppercase tracking-[0.15em] text-gray-300">Name</label>
-                <input id="name" name="name" type="text" required placeholder="Genius Azuka" class="w-full rounded-xl border border-gray-700 bg-[#0d0f14] px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-sunset-500 focus:ring-2 focus:ring-sunset-500/30 transition">
-              </div>
-              <div class="flex flex-col gap-2">
-                <label for="email" class="text-sm font-mono uppercase tracking-[0.15em] text-gray-300">Email</label>
-                <input id="email" name="email" type="email" required placeholder="azukagenius09@gmail.com" class="w-full rounded-xl border border-gray-700 bg-[#0d0f14] px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-sunset-500 focus:ring-2 focus:ring-sunset-500/30 transition">
-              </div>
-            </div>
+        <!-- Form + Sidebar -->
+        <section class="border-t border-gray-800 pt-16 sm:pt-20">
+          <div class="grid lg:grid-cols-[1.3fr,0.7fr] gap-16">
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div class="flex flex-col gap-2">
-                <label for="project-type" class="text-sm font-mono uppercase tracking-[0.15em] text-gray-300">Project Type</label>
-                <select id="project-type" name="project-type" class="w-full rounded-xl border border-gray-700 bg-[#0d0f14] px-4 py-3 text-gray-100 focus:border-sunset-500 focus:ring-2 focus:ring-sunset-500/30 transition">
-                  <option>Website / Marketing page</option>
-                  <option>Web app / Dashboard</option>
-                  <option>Design system</option>
-                  <option>Prototype / MVP</option>
-                  <option>Consultation</option>
-                </select>
-              </div>
-              <div class="flex flex-col gap-2">
-                <label for="timeline" class="text-sm font-mono uppercase tracking-[0.15em] text-gray-300">Timeline</label>
-                <input id="timeline" name="timeline" type="text" placeholder="e.g. 4–6 weeks" class="w-full rounded-xl border border-gray-700 bg-[#0d0f14] px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-sunset-500 focus:ring-2 focus:ring-sunset-500/30 transition">
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-2">
-              <label for="message" class="text-sm font-mono uppercase tracking-[0.15em] text-gray-300">Project details</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Share goals, audience, scope, and links (Figma, docs, or inspiration)." class="w-full rounded-xl border border-gray-700 bg-[#0d0f14] px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-sunset-500 focus:ring-2 focus:ring-sunset-500/30 transition"></textarea>
-            </div>
-
-            <div class="flex flex-wrap items-center gap-3">
-              <button type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">
-                Send message
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </button>
-              <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-ink-900 transition">Email directly</a>
-              <p class="text-xs font-mono uppercase tracking-[0.2em] text-gray-400">Response within 48 hours</p>
-            </div>
-            <!-- honeypot to deter bots (hidden from users) -->
-            <input type="text" name="website" id="website" class="hidden" tabindex="-1" autocomplete="off">
-            <!-- status message -->
-            <div id="form-status" role="status" aria-live="polite" class="mt-3 text-sm font-mono text-gray-300"></div>
-          </form>
-
-          <div class="flex flex-col gap-6">
-            <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-4">
-              <div class="flex items-center justify-between">
-                <h2 class="font-display text-2xl text-white">Project fit</h2>
-                <span class="text-xs font-mono text-gray-400">What works best</span>
-              </div>
-              <ul class="space-y-3 text-sm text-gray-200 font-mono">
-                <li class="flex gap-2"><span class="text-sunset-500">•</span><span>Need a clear flow from idea → prototype → launch.</span></li>
-                <li class="flex gap-2"><span class="text-sunset-500">•</span><span>Value fast iteration with polished visuals.</span></li>
-                <li class="flex gap-2"><span class="text-sunset-500">•</span><span>Want React frontends and Django backends without bloat.</span></li>
-                <li class="flex gap-2"><span class="text-sunset-500">•</span><span>Prefer clean, intentional styling (vanilla, Tailwind, or modules).</span></li>
-              </ul>
-              <div class="rounded-xl border border-gray-800 bg-white/5 p-4 text-sm text-gray-200 font-serif">
-                Let’s keep the stack lean and tailored—Figma/Framer for design, React/Node for the front, Django for the back, and the right layer of CSS to keep it crisp.
-              </div>
-              <div class="flex items-center gap-3 pt-1">
-                <div class="h-12 w-12 rounded-full bg-white text-black flex items-center justify-center font-display text-xl">G</div>
-                <div>
-                  <p class="font-semibold text-white">Genius Azuka</p>
-                  <p class="text-sm text-gray-400">Product Designer & Frontend Dev</p>
+            <!-- Form -->
+            <form id="contact-form" method="POST" action="/api/contact" class="flex flex-col gap-8" novalidate>
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-2">
+                  <label for="name" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Name</label>
+                  <input id="name" name="name" type="text" required placeholder="Genius Azuka" class="w-full border-b border-gray-700 bg-transparent px-0 py-3 text-gray-100 placeholder-gray-600 focus:border-sunset-500 focus:outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="email" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Email</label>
+                  <input id="email" name="email" type="email" required placeholder="azukagenius09@gmail.com" class="w-full border-b border-gray-700 bg-transparent px-0 py-3 text-gray-100 placeholder-gray-600 focus:border-sunset-500 focus:outline-none transition">
                 </div>
               </div>
-            </div>
 
-            <div class="rounded-2xl border border-gray-800 bg-[#111318] shadow-soft overflow-hidden">
-              <div class="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
-                <span class="h-3 w-3 rounded-full bg-red-500"></span>
-                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
-                <span class="h-3 w-3 rounded-full bg-green-500"></span>
-                <span class="text-xs font-mono text-gray-400 ml-2">contact@genius: ~</span>
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-2">
+                  <label for="project-type" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Project type</label>
+                  <select id="project-type" name="project-type" class="w-full border-b border-gray-700 bg-transparent px-0 py-3 text-gray-100 focus:border-sunset-500 focus:outline-none transition">
+                    <option class="bg-[#0b0b0f]">Website / Marketing page</option>
+                    <option class="bg-[#0b0b0f]">Web app / Dashboard</option>
+                    <option class="bg-[#0b0b0f]">Design system</option>
+                    <option class="bg-[#0b0b0f]">Prototype / MVP</option>
+                    <option class="bg-[#0b0b0f]">Consultation</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="timeline" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Timeline</label>
+                  <input id="timeline" name="timeline" type="text" placeholder="e.g. 4&#8211;6 weeks" class="w-full border-b border-gray-700 bg-transparent px-0 py-3 text-gray-100 placeholder-gray-600 focus:border-sunset-500 focus:outline-none transition">
+                </div>
               </div>
-              <div class="p-4 font-mono text-sm text-gray-200 space-y-2">
-                <p>1. &gt; contact --stack</p>
-                <p>2. React  ·  Node.js  ·  Django</p>
-                <p>3. Tailwind CSS  ·  Vanilla CSS  ·  CSS Modules</p>
-                <p>4. Figma  ·  Framer</p>
-                <p>5. ---</p>
-                <p>6. &gt; contact --start</p>
-                <p>7. ✔ Message queued. Reply in 48h.</p>
+
+              <div class="flex flex-col gap-2">
+                <label for="message" class="text-xs font-mono uppercase tracking-[0.2em] text-gray-500">Project details</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Share goals, audience, scope, and links (Figma, docs, or inspiration)." class="w-full border-b border-gray-700 bg-transparent px-0 py-3 text-gray-100 placeholder-gray-600 focus:border-sunset-500 focus:outline-none transition resize-none"></textarea>
               </div>
+
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <button type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition text-sm">
+                  Send message
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+                <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-gray-700 text-white font-semibold hover:border-white transition text-sm">Email directly</a>
+              </div>
+              <p class="text-xs font-mono text-gray-600 uppercase tracking-[0.2em]">Response within 48 hours</p>
+              <!-- honeypot -->
+              <input type="text" name="website" id="website" class="hidden" tabindex="-1" autocomplete="off">
+              <div id="form-status" role="status" aria-live="polite" class="text-sm font-mono text-gray-300"></div>
+            </form>
+
+            <!-- Sidebar -->
+            <div class="flex flex-col gap-12 pt-2">
+
+              <!-- Project fit -->
+              <div>
+                <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Best fit</p>
+                <ul class="space-y-4 font-serif text-gray-400 text-sm">
+                  <li class="flex gap-3"><span class="text-sunset-500 flex-shrink-0">&#8212;</span>Clear flow from idea &#8594; prototype &#8594; launch.</li>
+                  <li class="flex gap-3"><span class="text-sunset-500 flex-shrink-0">&#8212;</span>Fast iteration with polished visuals.</li>
+                  <li class="flex gap-3"><span class="text-sunset-500 flex-shrink-0">&#8212;</span>React frontends and Django backends, no bloat.</li>
+                  <li class="flex gap-3"><span class="text-sunset-500 flex-shrink-0">&#8212;</span>Clean, intentional styling for every scope.</li>
+                </ul>
+                <div class="flex items-center gap-3 mt-8">
+                  <div class="h-10 w-10 rounded-full bg-white text-black flex items-center justify-center font-display font-bold text-lg flex-shrink-0">G</div>
+                  <div>
+                    <p class="font-semibold text-white text-sm">Genius Azuka</p>
+                    <p class="text-xs text-gray-500">Product Designer &amp; Frontend Dev</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mac window — kept -->
+              <div class="rounded-2xl border border-gray-800 bg-[#111318] overflow-hidden">
+                <div class="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
+                  <span class="h-3 w-3 rounded-full bg-red-500"></span>
+                  <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                  <span class="h-3 w-3 rounded-full bg-green-500"></span>
+                  <span class="text-xs font-mono text-gray-500 ml-2">contact@genius: ~</span>
+                </div>
+                <div class="p-5 font-mono text-sm text-gray-400 space-y-2">
+                  <p><span class="text-gray-600">1.</span> &gt; contact --stack</p>
+                  <p><span class="text-gray-600">2.</span> React &middot; Node.js &middot; Django</p>
+                  <p><span class="text-gray-600">3.</span> Tailwind CSS &middot; Vanilla CSS</p>
+                  <p><span class="text-gray-600">4.</span> Figma &middot; Framer</p>
+                  <p><span class="text-gray-600">5.</span> ---</p>
+                  <p><span class="text-gray-600">6.</span> &gt; contact --start</p>
+                  <p><span class="text-gray-600 text-sunset-500">7.</span> <span class="text-white">&#10003; Message queued. Reply in 48h.</span></p>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
+        </section>
+
       </div>
     </main>
     <footer class="border-t border-gray-800 bg-[#0f0f0f] px-6 sm:px-12 py-12">
       <div class="max-w-6xl mx-auto flex flex-col gap-8">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div class="flex flex-col gap-2">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Let’s collaborate</p>
-            <h3 class="font-display text-2xl text-white">Prefer email or a call? I’ll reply within 48 hours.</h3>
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Letâ€™s collaborate</p>
+            <h3 class="font-display text-2xl text-white">Prefer email or a call? Iâ€™ll reply within 48 hours.</h3>
           </div>
           <div class="flex flex-wrap gap-3">
             <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Contact form</a>
@@ -282,7 +284,7 @@
             </a>
           </div>
           <div class="flex flex-wrap items-center gap-4 font-mono text-xs text-gray-400">
-            <span>© 2025 Genius Azuka</span>
+            <span>Â© 2025 Genius Azuka</span>
             <div class="h-4 w-px bg-gray-800"></div>
             <div class="flex flex-wrap gap-4">
               <a href="about.html" class="hover:text-white">About</a>
@@ -365,7 +367,7 @@
           if (res.ok) {
             status.classList.remove('text-red-400');
             status.classList.add('text-sunset-500');
-            status.textContent = 'Thanks — your message was sent. I’ll reply within 48 hours.';
+            status.textContent = 'Thanks â€” your message was sent. Iâ€™ll reply within 48 hours.';
             form.reset();
           } else {
             const body = await res.json().catch(() => ({}));
@@ -374,7 +376,7 @@
         } catch (err) {
           status.classList.remove('text-sunset-500');
           status.classList.add('text-red-400');
-          status.textContent = 'Sorry — there was a problem sending your message. Please email azukagenius09@gmail.com directly.';
+          status.textContent = 'Sorry â€” there was a problem sending your message. Please email azukagenius09@gmail.com directly.';
           console.error('Contact form error:', err);
         } finally {
           submitBtn.disabled = false;
