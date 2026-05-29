@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -154,133 +154,182 @@
       </div>
     </div>
 
-    <main id="projects" class="flex-1 px-6 sm:px-20 pt-28 sm:pt-32 pb-16 sm:pb-20">
-      <div class="max-w-5xl mx-auto site-max flex flex-col gap-10">
-        <div class="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-[#111826] via-[#0b0b0f] to-[#0b0b0f] p-10 shadow-soft will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-          <div class="absolute -left-14 -top-16 h-48 w-48 bg-sunset-500/10 blur-3xl rounded-full"></div>
-          <div class="absolute -right-20 -bottom-20 h-72 w-72 bg-ink-700/20 blur-3xl rounded-full"></div>
-          <div class="relative z-10 flex flex-col gap-4">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-300">Projects</p>
-            <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white">Products and pages that ship polish.</h1>
-            <p class="text-base sm:text-lg text-gray-200 font-serif leading-relaxed max-w-3xl">
-              A mix of shipped products and experiments from my GitHub (`geenyzk`)—lean stacks, clean UX, and fast delivery with React/Node, Django, Tailwind, and motion where it fits.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Design systems</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Cinematic motion</span>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10 font-mono">Fast shipping</span>
-            </div>
-          </div>
-        </div>
+    <main id="projects" class="flex-1 px-6 sm:px-12 pt-28 sm:pt-36 pb-24">
+      <div class="max-w-4xl mx-auto flex flex-col">
 
-        <div class="grid lg:grid-cols-3 gap-8">
-          <article class="lg:col-span-2 p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-2xl text-white">Eyres Staff Software</h2>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Operations</span>
-            </div>
-            <p class="text-sm text-gray-300 font-serif">Internal tooling for staff scheduling and ops visibility. Built for clarity, access control, and fast iteration.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">React</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Django</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Role-based access</span>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-3 text-sm text-gray-300">
-              <div class="p-4 rounded-xl border border-gray-800 bg-[#0d0f14]">
-                <p class="font-mono text-xs uppercase tracking-[0.15em] text-gray-400">Role</p>
-                <p class="text-gray-100">Product design, Fullstack build</p>
+        <!-- Hero -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Projects</p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-8">Products and pages<br>that ship polish.</h1>
+          <p class="text-lg text-gray-400 font-serif leading-relaxed max-w-2xl mb-10">
+            A mix of shipped products and experiments&#8212;lean stacks, clean UX, and fast delivery with React, Django, Tailwind, and motion where it fits.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Design systems</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Cinematic motion</span>
+            <span class="px-3 py-1 text-xs font-mono text-gray-500 border-b border-gray-700">Fast shipping</span>
+          </div>
+        </section>
+
+        <!-- Projects list -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-10">Selected work</p>
+          <div class="border-t border-gray-800">
+
+            <article class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">01</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-1">Eyres Staff Software</h2>
+                <p class="font-mono text-sm text-sunset-500">Operations</p>
               </div>
-              <div class="p-4 rounded-xl border border-gray-800 bg-[#0d0f14]">
-                <p class="font-mono text-xs uppercase tracking-[0.15em] text-gray-400">Outcome</p>
-                <p class="text-gray-100">Lean ops app with clear permissions</p>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">Internal tooling for staff scheduling and ops visibility. Built for clarity, access control, and fast iteration across a growing team.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>React</span><span class="text-gray-800">&middot;</span>
+                  <span>Tailwind</span><span class="text-gray-800">&middot;</span>
+                  <span>Django</span><span class="text-gray-800">&middot;</span>
+                  <span>Role-based access</span>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <p class="font-mono text-xs uppercase tracking-[0.2em] text-gray-600 mb-1">Role</p>
+                    <p class="text-gray-400 font-serif">Product design, Fullstack build</p>
+                  </div>
+                  <div>
+                    <p class="font-mono text-xs uppercase tracking-[0.2em] text-gray-600 mb-1">Outcome</p>
+                    <p class="text-gray-400 font-serif">Lean ops app with clear permissions</p>
+                  </div>
+                </div>
+                <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Eyres%20Staff%20Software" class="font-mono text-sm text-sunset-500 hover:text-sunset-400 transition">Request access (private) &#8594;</a>
               </div>
-            </div>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Eyres%20Staff%20Software" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
-          </article>
+            </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h3 class="font-display text-xl text-white">Rolsa</h3>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Web app</span>
-            </div>
-            <p class="text-sm text-gray-300 font-serif">Lightweight experience with clear UI patterns and animation flourishes.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">React</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Motion</span>
-            </div>
-            <p class="text-xs font-mono text-gray-400">Process: Figma → Tailwind components → motion polish.</p>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Rolsa" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
-          </article>
+            <article class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">02</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-1">Rolsa</h2>
+                <p class="font-mono text-sm text-sunset-500">Web app</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">Lightweight experience with clear UI patterns and animation flourishes. Prototyped in Figma then built component-by-component with motion polish.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>React</span><span class="text-gray-800">&middot;</span>
+                  <span>Tailwind</span><span class="text-gray-800">&middot;</span>
+                  <span>Motion</span>
+                </div>
+                <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20Rolsa" class="font-mono text-sm text-sunset-500 hover:text-sunset-400 transition">Request access (private) &#8594;</a>
+              </div>
+            </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h3 class="font-display text-xl text-white">CRUD Dashboard</h3>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Productivity</span>
-            </div>
-            <p class="text-sm text-gray-300 font-serif">CRUD application with clean data tables, validation, and responsive layout.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">React</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Node.js</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Mongo/SQL</span>
-            </div>
-            <p class="text-xs font-mono text-gray-400">Focus: predictable forms, accessibility, and tidy state.</p>
-            <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20CRUD%20dashboard" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Request access (private) →</a>
-          </article>
+            <article class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">03</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-1">CRUD Dashboard</h2>
+                <p class="font-mono text-sm text-sunset-500">Productivity</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">CRUD application with clean data tables, form validation, and a responsive layout. Focus on predictable interactions, accessibility, and tidy state management.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>React</span><span class="text-gray-800">&middot;</span>
+                  <span>Node.js</span><span class="text-gray-800">&middot;</span>
+                  <span>Mongo / SQL</span>
+                </div>
+                <a href="mailto:azukagenius09@gmail.com?subject=Access%20request%20-%20CRUD%20dashboard" class="font-mono text-sm text-sunset-500 hover:text-sunset-400 transition">Request access (private) &#8594;</a>
+              </div>
+            </article>
 
-          <article class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-3 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h3 class="font-display text-xl text-white">Other GitHub Repos</h3>
-              <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-100 border border-white/10">Open source</span>
-            </div>
-            <p class="text-sm text-gray-300 font-serif">Additional experiments, utilities, and UI components maintained on GitHub.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-200">
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">React</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Node</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Django</span>
-              <span class="px-2 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
-            </div>
-            <a href="https://github.com/geenyzk" class="text-sm font-mono text-sunset-500 hover:text-sunset-400 focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Browse profile →</a>
-          </article>
-        </div>
+            <article class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">04</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-1">GLH</h2>
+                <p class="font-mono text-sm text-sunset-500">Agriculture &middot; Marketplace</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">A platform built for local farmers and suppliers to list, manage, and connect with buyers in their region. Focused on simplicity and accessibility for non-technical users.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>Python</span><span class="text-gray-800">&middot;</span>
+                  <span>Django</span><span class="text-gray-800">&middot;</span>
+                  <span>PythonAnywhere</span>
+                </div>
+                <a href="https://geenyzk.pythonanywhere.com" target="_blank" rel="noopener noreferrer" class="font-mono text-sm text-sunset-500 hover:text-sunset-400 transition">View live &#8594;</a>
+              </div>
+            </article>
 
-        <div class="grid lg:grid-cols-[1.1fr,0.9fr] gap-8">
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#111318] shadow-soft flex flex-col gap-4 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-2xl text-white">Process snapshot</h2>
-              <span class="text-xs font-mono text-gray-400">Build flow</span>
-            </div>
-            <ol class="space-y-3 text-sm text-gray-200 font-mono">
-              <li class="flex gap-3"><span class="text-sunset-500">01</span><span>Discovery + Figma/Framer prototype.</span></li>
-              <li class="flex gap-3"><span class="text-sunset-500">02</span><span>Design tokens, components, and motion cues.</span></li>
-              <li class="flex gap-3"><span class="text-sunset-500">03</span><span>React build (Tailwind, CSS Modules, or vanilla).</span></li>
-              <li class="flex gap-3"><span class="text-sunset-500">04</span><span>Django/Node services where needed.</span></li>
-              <li class="flex gap-3"><span class="text-sunset-500">05</span><span>Perf, accessibility, and launch checklist.</span></li>
-            </ol>
-            <div class="rounded-xl border border-gray-800 bg-white/5 p-4 text-sm text-gray-200 font-serif">
-              Each engagement stays lean: only the tools required to ship quality fast.
-            </div>
+            <article class="py-10 sm:py-14 grid sm:grid-cols-[2fr,3fr] gap-6 sm:gap-16 border-b border-gray-800">
+              <div>
+                <p class="font-mono text-xs text-gray-700 mb-3">05</p>
+                <h2 class="font-display text-2xl sm:text-3xl text-white mb-1">GitHub Repos</h2>
+                <p class="font-mono text-sm text-sunset-500">Open source</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <p class="text-gray-400 font-serif leading-relaxed">Additional experiments, utilities, and UI components maintained publicly on GitHub under <span class="font-mono text-gray-300">geenyzk</span>.</p>
+                <div class="flex flex-wrap gap-3 font-mono text-xs text-gray-600">
+                  <span>React</span><span class="text-gray-800">&middot;</span>
+                  <span>Node</span><span class="text-gray-800">&middot;</span>
+                  <span>Django</span><span class="text-gray-800">&middot;</span>
+                  <span>Tailwind</span>
+                </div>
+                <a href="https://github.com/geenyzk" class="font-mono text-sm text-sunset-500 hover:text-sunset-400 transition">Browse profile &#8594;</a>
+              </div>
+            </article>
+
           </div>
+        </section>
 
-          <div class="p-6 rounded-2xl border border-gray-800 bg-[#0f1320] shadow-soft flex flex-col gap-5 will-change-transform transform transition duration-300 hover:-translate-y-1 hover:shadow-lg card-pad">
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-2xl text-white">Let’s build yours</h2>
-              <span class="text-xs font-mono text-gray-400">New work</span>
-            </div>
-            <p class="text-sm text-gray-300 font-serif">Have a project in mind? Share scope, audience, and timeline—I’ll respond within 48 hours with a suggested plan.</p>
-            <div class="flex flex-wrap gap-3">
-              <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Contact form</a>
-              <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-ink-900 transition focus-visible:ring-2 focus-visible:ring-sunset-500 focus-visible:ring-offset-2 focus:outline-none">Email me</a>
-            </div>
-            <div class="rounded-xl border border-gray-800 bg-white/5 p-4 font-mono text-xs text-gray-200 space-y-2">
-              <p>stack --design → Figma / Framer</p>
-              <p>stack --frontend → React / Node.js</p>
-              <p>stack --backend → Django</p>
-              <p>stack --style → Tailwind / CSS Modules / Vanilla CSS</p>
-            </div>
+        <!-- Process -->
+        <section class="pb-20 sm:pb-28">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-10">Build flow</p>
+          <ol class="space-y-8">
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">01</span>
+              <div>
+                <p class="text-white font-serif mb-1">Discovery + Figma / Framer prototype</p>
+                <p class="text-gray-500 text-sm font-serif">Align on goals, audience, and constraints before writing code.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">02</span>
+              <div>
+                <p class="text-white font-serif mb-1">Design tokens, components &amp; motion cues</p>
+                <p class="text-gray-500 text-sm font-serif">Establish a visual language before the first React component.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">03</span>
+              <div>
+                <p class="text-white font-serif mb-1">React build</p>
+                <p class="text-gray-500 text-sm font-serif">Tailwind, CSS Modules, or vanilla — whichever fits the scope.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">04</span>
+              <div>
+                <p class="text-white font-serif mb-1">Django / Node services</p>
+                <p class="text-gray-500 text-sm font-serif">Only where the project actually needs backend logic.</p>
+              </div>
+            </li>
+            <li class="flex gap-8 items-start">
+              <span class="font-mono text-xs text-gray-700 pt-1 w-5 flex-shrink-0">05</span>
+              <div>
+                <p class="text-white font-serif mb-1">Performance, accessibility &amp; launch</p>
+                <p class="text-gray-500 text-sm font-serif">Audits and checklist before anything goes live.</p>
+              </div>
+            </li>
+          </ol>
+          <p class="mt-10 text-gray-600 font-serif text-sm max-w-xl">Each engagement stays lean: only the tools required to ship quality fast.</p>
+        </section>
+
+        <!-- CTA -->
+        <section class="border-t border-gray-800 pt-16 sm:pt-20">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">New work</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-white font-extrabold mb-4 max-w-xl">Have a project in mind? Let&#39;s build it.</h2>
+          <p class="text-gray-400 font-serif leading-relaxed max-w-xl mb-10">Share scope, audience, and timeline&#8212;I&#39;ll respond within 48 hours with a suggested plan.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 bg-white text-ink-900 font-semibold rounded-xl hover:-translate-y-0.5 hover:shadow-lg transition text-sm">Contact form</a>
+            <a href="mailto:azukagenius09@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 border border-gray-700 text-white font-semibold rounded-xl hover:border-white transition text-sm">Email me</a>
           </div>
-        </div>
+        </section>
+
       </div>
     </main>
 
@@ -288,8 +337,8 @@
       <div class="max-w-6xl mx-auto flex flex-col gap-8">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div class="flex flex-col gap-2">
-            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Let’s collaborate</p>
-            <h3 class="font-display text-2xl text-white">Ready to ship your next launch? I’ll guide the build.</h3>
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-gray-400">Letâ€™s collaborate</p>
+            <h3 class="font-display text-2xl text-white">Ready to ship your next launch? Iâ€™ll guide the build.</h3>
           </div>
           <div class="flex flex-wrap gap-3">
             <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-ink-900 font-semibold hover:-translate-y-0.5 hover:shadow-lg transition">Start a project</a>
@@ -318,7 +367,7 @@
             </a>
           </div>
           <div class="flex flex-wrap items-center gap-4 font-mono text-xs text-gray-400">
-            <span>© 2025 Genius Azuka</span>
+            <span>Â© 2025 Genius Azuka</span>
             <div class="h-4 w-px bg-gray-800"></div>
             <div class="flex flex-wrap gap-4">
               <a href="about.html" class="hover:text-white">About</a>
