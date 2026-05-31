@@ -17,7 +17,7 @@
   <meta name="twitter:description" content="Get in touch for web development, software development, manual testing, and small business websites.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&amp;family=Manrope:wght@400;600&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -251,7 +251,7 @@
                 </div>
               </div>
 
-              <!-- Mac window — kept -->
+              <!-- Mac window - kept -->
               <div class="rounded-2xl border border-gray-800 bg-[#111318] overflow-hidden">
                 <div class="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
                   <span class="h-3 w-3 rounded-full bg-red-500"></span>
@@ -310,7 +310,7 @@
             </a>
           </div>
           <div class="flex flex-wrap items-center gap-4 font-mono text-xs text-gray-400">
-            <span>Â© 2025 Genius Azuka</span>
+            <span>&copy; 2025 Genius Azuka</span>
             <div class="h-4 w-px bg-gray-800"></div>
             <div class="flex flex-wrap gap-4">
               <a href="about.html" class="hover:text-white">About</a>
@@ -354,7 +354,7 @@
     });
   </script>
   <script>
-    // Contact form — Web3Forms when configured, with an email fallback for static hosting.
+    // Contact form - Web3Forms when configured, with an email fallback for static hosting.
     // To send silently from the page, create a Web3Forms key and replace YOUR_ACCESS_KEY below.
     (function () {
       const ACCESS_KEY = 'YOUR_ACCESS_KEY';
@@ -402,7 +402,7 @@
           return;
         }
 
-        // honeypot check — silently ignore bots
+        // honeypot check - silently ignore bots
         if (form.querySelector('[name="website"]').value) {
           status.textContent = 'Message sent.';
           return;
@@ -437,7 +437,7 @@
           if (res.ok && body.success) {
             status.classList.remove('text-red-400');
             status.classList.add('text-sunset-500');
-            status.textContent = 'Thanks — your message was sent. I’ll reply within 48 hours.';
+            status.textContent = 'Thanks - your message was sent. I'll reply within 48 hours.';
             form.reset();
           } else {
             throw new Error(body.message || 'Failed to send message.');
@@ -445,7 +445,7 @@
         } catch (err) {
           status.classList.remove('text-sunset-500');
           status.classList.add('text-red-400');
-          status.textContent = 'Sorry — there was a problem sending your message. Please email info@geeny.co.uk directly.';
+          status.textContent = 'Sorry - there was a problem sending your message. Please email info@geeny.co.uk directly.';
           console.error('Contact form error:', err);
         } finally {
           submitBtn.disabled = false;
