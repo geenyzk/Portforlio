@@ -1,4 +1,4 @@
-# Genius Azuka — Portfolio Website
+# Genius — Portfolio Website
 
 A modern, minimalist personal portfolio website showcasing creative web design and development work.
 
@@ -69,10 +69,10 @@ Portfolio/
 
 ## 📄 License
 
-© 2025 Genius Azuka. All rights reserved.
+© 2025 Genius. All rights reserved.
 
 ---
 
 <p align="center">
-  <b>Designed & Developed with ❤️ by Genius Azuka</b>
+  <b>Designed & Developed with ❤️ by Genius</b>
 </p>
